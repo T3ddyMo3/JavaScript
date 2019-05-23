@@ -1,14 +1,15 @@
 const express = require('express');
+const path = require('path');
 
 const app = express();
 
-app.get(`/`, (req, res)=>{
-    res.send(`hey welcome nice to meet you`);
-});
+//our veiws path
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'pug');
 
-app.get(`/about`, (req,res)=>{
-    res.send(`Damn i kinda know whats going on!!!!`);
-});
+//our routes 
+const routes = require('./routes.js');
+app.use('/', routes);
 
 const port =  (process.env.PORT || 4000);
 app.listen(port, ()=> console.log(`lising on ${port}`));

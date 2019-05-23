@@ -1,0 +1,23 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "this is bloggin platform",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T3ddyMo3/JavaScript.git"
+  },
+  "author": "Mohammad Khaverdizadeh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/T3ddyMo3/JavaScript/issues"
+  },
+  "homepage": "https://github.com/T3ddyMo3/JavaScript#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

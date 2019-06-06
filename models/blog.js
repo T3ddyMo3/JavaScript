@@ -6,7 +6,7 @@ const BlogSchema = new mongoose.Schema({
         type: String,
         requrie: true
     },
-    contect: {
+    content: {
         type: String
     },
     status: {
